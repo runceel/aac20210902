@@ -6,7 +6,7 @@
         },
         {
             "route": "/logout",
-            "rewrite": "/.auth/logout"
+            "redirect": "/.auth/logout"
         },
         {
             "route": "/about",
