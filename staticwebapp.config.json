@@ -5,6 +5,10 @@
             "rewrite": "/.auth/login/aad"
         },
         {
+            "route": "/logout",
+            "rewrite": "/.auth/logout"
+        },
+        {
             "route": "/about",
             "allowedRoles": [ "authenticated" ]
         },
