@@ -25,10 +25,10 @@ jobs:
         id: npm_install
         run:
           npm install 
-      - name: npm build
-        id: npm_build
+      - name: npm run build
+        id: build
         run:
-          npm build
+          npm run build
       - name: move config to dist
         run: mv staticwebapp.config.json ./dist
       - name: Deploy
