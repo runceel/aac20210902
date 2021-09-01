@@ -21,10 +21,13 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: build
-        id: build
+      - name: npm install
+        id: npm_install
         run:
           npm install 
+      - name: npm build
+        id: npm_build
+        run:
           npm build
       - name: move config to dist
         run: mv staticwebapp.config.json ./dist
