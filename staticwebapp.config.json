@@ -1,0 +1,20 @@
+{
+    "routes": [
+        {
+            "route": "/about",
+            "allowedRoles": [ "authenticated" ]
+        },
+        {
+            "route": "/api/*",
+            "allowedRoles": [ "authenticated" ]
+        }
+    ],
+    "navigationFallback": {
+        "rewrite": "/index.html",
+        "exclude": [
+            "*.{jpg,gif,png}",
+            "*.{.css}",
+            "*.{.js}"
+        ]
+    }
+}
