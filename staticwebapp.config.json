@@ -2,7 +2,7 @@
     "routes": [
         {
             "route": "/login",
-            "rewrite": "/.auth/login/aad"
+            "rewrite": "/.auth/login/azureActiveDirectory"
         },
         {
             "route": "/logout",
