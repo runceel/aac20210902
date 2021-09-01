@@ -29,7 +29,7 @@ export default defineComponent({
   methods: {
     async invokeApi() {
       try {
-        this.name = await axios.get('/api/Function1');
+        this.name = (await axios.get('/api/Function1')).data;
       } catch (e) {
         this.name = '';
         alert('エラー');
